@@ -1,11 +1,97 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legal Solution</title>
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- google font garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {                       
+                        'hero-img': "url('./images/banner.png')",                   
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- custom css  -->
+    <style>
+        .font-garamond {
+            font-family: 'EB Garamond', serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class=".font-garamond">
+    <header>
+        <!-- Nav section start -->
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>Service</a></li>
+                        <li><a>Course</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost normal-case text-xl"><img src="./images/logo2.png" alt=""></a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Service<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Course<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                    <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+                </ul>
+            </div>
+            <div class="navbar-end">
+                <a class="btn text-white bg-[#B68C5A]">Free Consultation</a>
+            </div>
+        </div>
+        <!-- Nav section start -->
+        <!-- hero section start -->
+        <div class="hero min-h-[calc(100vh-66px)] bg-hero-img">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-lg">
+                    <h1 class="mb-5 text-5xl font-bold">We Provide Effective Legal Solutions</h1>
+                    <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <button class="btn text-white bg-[#B68C5A]">Search</button>
+                </div>
+            </div>
+        </div>
+        <!-- hero end -->
+    </header>
+    <main class="max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
